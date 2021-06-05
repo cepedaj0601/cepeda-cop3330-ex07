@@ -35,6 +35,22 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        
+
+        System.out.println("What is the length of the room in feet?");
+        int length = in.nextInt();
+
+        System.out.println("What is the width of the room in feet?");
+        int width = in.nextInt();
+
+        System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.\n" +
+                "The area is\n" +
+                (width*length + " square feet"));
+
+        double convert = 0.09290304;
+        double converted = ((width*length)*convert);
+        System.out.println(converted);
+        System.out.println(converted + " square meters\n" +
+                "The formula for this conversion is m2 = f2 x " + convert);
+
     }
 }
