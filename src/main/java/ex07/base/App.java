@@ -48,7 +48,6 @@ public class App {
 
         double convert = 0.09290304;
         double converted = ((width*length)*convert);
-        System.out.println(converted);
         System.out.println(converted + " square meters\n" +
                 "The formula for this conversion is m2 = f2 x " + convert);
 
